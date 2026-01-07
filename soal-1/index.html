@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-page">
+    <main class="main-container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="form-title">Buat Akun Baru</h2>
+                <p class="form-subtitle">Bergabunglah dan mulai pengalaman Anda hari ini.</p>
+
+                <!-- alert -->
+                <div id="alert" class="alert show">
+                    <p class="alert-text">Pendaftaran berhasil untuk email: <span class="alert-email"></span></p>
+                    <button class="btn-close">X</button>
+                </div>
+
+                <form id="registerForm" class="form-spacing">
+                    <div class="form-group">
+                        <label class="label">Nama Lengkap</label>
+                        <input type="text" name="fullname" placeholder="John Doe" class="input-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="label">Email</label>
+                        <input type="email" name="email" placeholder="john123@email.com" class="input-control" required>
+                    </div>
+                    
+                    <div class="grid-row">
+                        <div class="form-group">
+                            <label class="label">Password</label>
+                            <input type="password" name="password" placeholder="••••••••" class="input-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Konfirmasi Password</label>
+                            <input type="password" name="password_confirmation" placeholder="••••••••" class="input-control" required>
+                        </div>
+                    </div>
+
+                    <div class="terms-section">
+                        <p class="terms-text">
+                            Dengan mendaftar, Anda menyetujui <a href="#" class="link">Syarat & Ketentuan</a> serta <a href="#" class="link">Kebijakan Privasi</a> kami.
+                        </p>
+                        <button type="submit" class="btn-submit">
+                            Daftar Sekarang
+                        </button>
+                    </div>
+                </form>
+
+                <p class="footer-text">
+                    Sudah punya akun? <a href="#login" class="link bold">Masuk di sini</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
